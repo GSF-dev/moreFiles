@@ -11,3 +11,4 @@ void showXY() {
 	std::cout << "_X = " << _X << std::endl;
 	std::cout << "_Y = " << _Y << std::endl;
 }
+//
