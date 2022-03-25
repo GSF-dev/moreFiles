@@ -1,6 +1,8 @@
 #include <iostream>
 #include "functions.h"
 #include "structures.h"
+#include "data.h"
+
 using namespace std;
 
 int main() {
@@ -13,11 +15,25 @@ int main() {
 	int arr[10];
 	fillArr(arr, 10, 40, 61);
 	cout << "Изначальный массив\n";
-	showArr(arr, 10);*/
+	showArr(arr, 10);
 
 	person Tom = { "tom Smith", {1,1,1990} };
 	showObj(Tom.birthday);
-	showObj(Tom);
+	showObj(Tom);*/
+
+	//data.h
+	cout << "Введите 2 числа: ";
+	cin >> _X >> _Y;
+	showXY();
+	cout << _X << " + " << _Y << " = " << sum(_X, _Y) << endl;
+
+	cout << "Введите радиус окружности: ";
+	int r;
+	cin >> r;
+	cout << "Площадь окружности = " << _PI * r * r << endl;
+	cout << "Изначальный массив\n";
+	fillArr(_A, 10, 10, 21);
+	showArr(_A, 10);
 
 	return 0;
 }
